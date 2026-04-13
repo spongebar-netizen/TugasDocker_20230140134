@@ -31,6 +31,7 @@ public class UserController {
     }
 
     @GetMapping("/home")
+
     public String home(Model model) {
         model.addAttribute("users", userList);
         return "home";
